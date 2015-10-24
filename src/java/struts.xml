@@ -1,0 +1,30 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true"/>
+    <constant name="struts.action.extension" value=","/><!-- Now we donot need any extensions --> 
+    <package name="default" extends="struts-default">
+        
+        <action name="authc" class="Web.Authenticationc">
+            <result name="success">/Candidate_Module.jsp</result>
+            <result name="error">/candidatelogin.jsp</result>
+        </action>
+        
+        <action name="authv" class="Web.Authenticationv">
+            <result name="success">/User_Module.jsp</result>
+            <result name="error">/login.jsp</result>
+        </action>
+        
+        <action name="autha" class="Web.Authenticationa" method="execute">
+            <result name="success">/Admin_Module.jsp</result>
+            <result name="error">/adminlogin.jsp</result>
+        </action>
+        
+        <action name="logout" class="Web.Authenticationa" method="logout">
+            <result name="success">/adminlogin.jsp</result>
+            <result name="login">/adminlogin.jsp</result>
+        </action>
+    </package>
+</struts>

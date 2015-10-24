@@ -1,0 +1,4 @@
+*.war
+build
+nbproject
+build.xml
