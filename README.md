@@ -7,10 +7,16 @@ Online National Polling System (ONPS) - a web-based system that will be made up 
 
 ##Tools & Technology :
 
-###Server Side : Java(JDK8.0), Servlet2.4, JSP2.0, EL, JSTL
-###Client Side : HTML, JavaScript, CSS
-###Database : MySQL 5.0
-###Framework : Jakarta Struts Framework.
+###Server Side : 
+Java(JDK8.0), Servlet2.4, JSP2.0, EL, JSTL
+###Client Side : 
+HTML, JavaScript, CSS
+###Database : 
+MySQL 5.0
+###ORM :
+Hibernate
+###Framework : 
+Jakarta Struts Framework.
 
 # <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat" width="80" />
 
